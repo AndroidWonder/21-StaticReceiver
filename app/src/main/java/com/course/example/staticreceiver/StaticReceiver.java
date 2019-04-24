@@ -1,9 +1,8 @@
 
 /*
  * This example uses a low battery event to start the Broadcast Receiver.
- * To emulate use the emulator's extended control panel. In the battery
- * controls set Charger Connection to none; Battery Status to not charging.
- * Move the charge level to below 50%. The low battery event should occur.
+ * To emulate use the emulator's extended control panel. In the Phone
+ * controls click the Send Message button.
  */
 
 package com.course.example.staticreceiver;

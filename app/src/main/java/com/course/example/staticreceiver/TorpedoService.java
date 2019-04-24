@@ -1,7 +1,7 @@
 /*
  * This example uses a thread to fire 3 photon torpedos,
  * one every 5 seconds. 
- * The service is started by a receiver.
+ * The service is started by a broadcast receiver.
  */
 
 package com.course.example.staticreceiver;
@@ -24,6 +24,7 @@ public class TorpedoService extends Service {
 	public void onCreate() {
 		super.onCreate();
         mp = MediaPlayer.create(this, R.raw.photon);
+		Log.e("RECEIVER", "service started");
 	}
 	
 	@Override

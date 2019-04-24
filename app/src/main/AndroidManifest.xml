@@ -13,15 +13,16 @@
         </activity>
 
         <receiver android:name=".BootReceiver" android:exported="true" android:enabled="true">
-            <intent-filter>
-                <action android:name="android.intent.action.BATTERY_LOW"/>
 
-            </intent-filter>
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+
+            </intent-filter> 
         </receiver>
 
 		<service android:name=".TorpedoService" />
  
     </application>
 
-
+<uses-permission android:name="android.permission.RECEIVE_SMS"/>
 </manifest>

@@ -1,6 +1,6 @@
 /*
- * This receiver is registered in the Manifest. It is started when a
- * BATTERY_LOW event occurs. It starts a service
+ * This receiver is registered in the Manifest. It is started when an
+ * SMS_RECEIVED event occurs. It starts a service
  * and writes to the log.
  */
 
@@ -18,7 +18,7 @@ public class BootReceiver extends BroadcastReceiver {
 	public void onReceive(Context context, Intent intent) {	
 		  
            Log.e("RECEIVER",
-                 "received BATTERY_LOW event, starting service");
+                 "received SMS_RECEIVED event, starting service");
            Intent intent2 = new Intent(context, TorpedoService.class);
            context.startService(intent2); 
 		   
