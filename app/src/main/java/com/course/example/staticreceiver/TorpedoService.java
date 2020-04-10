@@ -55,7 +55,7 @@ public class TorpedoService extends Service {
     	
 		try{
     			for(int i=0; i<3; i++){  
-    				Log.e("RECEIVER", "Loop");
+    				Log.e("RECEIVER", "Fired torpedo");
     				mp.seekTo(0);  
     				mp.start();
     				Thread.sleep(5000);

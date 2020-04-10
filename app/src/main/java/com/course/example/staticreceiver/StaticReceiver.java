@@ -1,8 +1,9 @@
 
 /*
- * This example uses a low battery event to start the Broadcast Receiver.
+ * This example uses an SMS received event to start the Broadcast Receiver.
  * To emulate use the emulator's extended control panel. In the Phone
- * controls click the Send Message button.
+ * controls click the Send Message button. This application must
+ * have runtime SMS permission enabled. Go to Settings, etc.
  */
 
 package com.course.example.staticreceiver;
