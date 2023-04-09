@@ -2,6 +2,7 @@
  * This receiver is registered in the Manifest. It is started when an
  * SMS_RECEIVED event occurs. It starts a service
  * and writes to the log.
+ * Be sure to grant permissions in Settings to receive an SMS Message.
  */
 
 package com.course.example.staticreceiver;
